@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.container {
+    width: 60%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.form-ele {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.upld-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background: #39414c;
+    border-radius: 4px;
+}
+
+.upld-container h3 {
+    font-weight: 200;
+}
+
+.upld-container h5 {
+    font-weight: 100;
+    margin-top: 10px;
+    color: #bab9b9;
+}
+
+.upld-info {
+    display: flex;
+    align-items: center;
+}
+
+.fa-cloud-upload-alt {
+    font-size: 3rem;
+    margin-right: 30px;
+}
+
+input[type="submit"], .return {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9rem;
+    background: #1e1e1e;
+    border: 2px solid #3d3c3c;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover, .return:hover {
+    background: #087066;
+    border: 2px solid #68a59f;
+}
+
+input[type="submit"]:active, .return:active {
+    transform: scale(0.97);
+    transition: transform 0.3s ease;
+}
+
+.vid-label {
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    background: #202229;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vid-label:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.vid-label:active {
+    border: 2px solid #888888;
+}
+
+.vid-label :invalid + span {
+    color: #a44;
+}
+
+.vid-label :valid + span {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+#vid, #vid-name {
+    display: none;
+}
+
+.vid-container {
+    display: flex;
+    align-items: center;
+}
+
+.vid-container p {
+    margin-left: 20px;
+}
+
+.success {
+    font-weight: 200;
+    font-size: 1.2rem;
+    position: relative;
+    margin-top: 25px;
+}
+
+#preview {
+    display: none;
+}
+
+/* #preloader{
+    background: rgba(0, 0, 0, 0.89) url(images/bounce.gif) no-repeat center;
+    background-size: 5%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+
+#image {
+    display: none;
+} */
+
+.topnav {
+    background-color: #222428;
+    overflow: hidden;
+}
+
+.topnav-right {
+    float: right;
+    margin-right: 25px;
+}
+
+.topnav-right a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.topnav-right a:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+  
+.topnav-right a:active {
+    color: #087066;
+}
+
+.fa-info-circle {
+    font-size: 1.5rem;
+}
+
+.instr {
+    text-align: center;
+}
+
+.return {
+    width: 180px;
+    height: 50px;
+}
