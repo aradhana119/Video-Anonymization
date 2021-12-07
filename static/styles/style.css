@@ -156,20 +156,6 @@ input[type="submit"]:active, .return:active {
     display: none;
 }
 
-/* #preloader{
-    background: rgba(0, 0, 0, 0.89) url(images/bounce.gif) no-repeat center;
-    background-size: 5%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    display: none;
-}
-
-#image {
-    display: none;
-} */
-
 .topnav {
     background-color: #222428;
     overflow: hidden;
