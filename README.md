@@ -1,2 +1,2 @@
 # Video-Anonymization
-A web application to automatically detect and blur human faces in a video and download this anonymized video.
+This project is a web application that anonymizes human faces in a video uploaded by the user using automatic face detection and image blurring with Gaussian blur. The processed video is also available for download. Currently, the video size has a maximum limit of 200MB. OpenCV library has been used to implement the video processing and face detection tasks. HTML and CSS have been used for the frontend while Flask has been used to implement the backend. A dynamic progress bar has also been implemented to show the rate at which the video is being processed and how long it will take to finish. 
